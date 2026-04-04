@@ -20,7 +20,7 @@
       "name": "Download file",
       "credentials": {
         "googleDriveOAuth2Api": {
-          "id": "YOUR_CREDENTIAL_ID",
+          "id": "YOUR_GOOGLEDRIVEOAUTH2API_CREDENTIAL_ID",
           "name": "Google Drive account"
         }
       }
@@ -44,87 +44,75 @@
         "assignments": {
           "assignments": [
             {
-              "id": "666d4ee0-a8e2-4548-9553-3e36969ecb83",
-              "name": "metadata.status",
-              "value": "={{ $json.metadata.status }}",
-              "type": "string"
-            },
-            {
-              "id": "d00fc14e-04c0-406b-8c26-d8270815c4d0",
-              "name": "metadata.category",
-              "value": "={{ $json.metadata.category }}",
-              "type": "string"
-            },
-            {
-              "id": "c2b2f3ac-dbfe-4e32-83f0-c6911bf8d956",
+              "id": "081f5176-d19b-4d98-bc4e-f03274f4f3b4",
               "name": "metadata.platform",
               "value": "={{ $json.metadata.platform }}",
               "type": "string"
             },
             {
-              "id": "ccb98baf-5e99-45b9-950e-68dad1bbf872",
-              "name": "metadata[\"final post\"]",
-              "value": "={{ $json.metadata[\"final post\"] }}",
-              "type": "string"
-            },
-            {
-              "id": "f40311f7-0c7b-433d-bcc0-1ba2cfa74489",
-              "name": "metadata.image",
-              "value": "={{ $json.metadata.image }}",
-              "type": "string"
-            },
-            {
-              "id": "052beac6-35fd-4cdd-b8dd-d25106e6a156",
-              "name": "metadata.channel",
-              "value": "={{ $json.metadata.channel }}",
-              "type": "string"
-            },
-            {
-              "id": "0a58b4e6-8cab-4bd2-8117-9ca9a4a2b078",
+              "id": "fdeab458-6642-4a40-b61e-06b54a26caf2",
               "name": "metadata.scheduled_date",
               "value": "={{ $json.metadata.scheduled_date }}",
               "type": "string"
             },
             {
-              "id": "7b69f8aa-aae1-4787-a7ce-bf0cb88602b9",
-              "name": "metadata.posted_date",
-              "value": "={{ $json.metadata.posted_date }}",
+              "id": "ead660b2-b0ba-4ad6-96f6-f5fb770fe49d",
+              "name": "metadata['final post']",
+              "value": "={{ $json.metadata['final post'] }}",
               "type": "string"
             },
             {
-              "id": "dd39b749-a644-494c-be54-0e6cc6cff009",
+              "id": "919ffb83-243e-41cb-b7cd-a1da3f5c2ff7",
+              "name": "metadata.image",
+              "value": "={{ $json.metadata.image }}",
+              "type": "string"
+            },
+            {
+              "id": "8e9ecdd9-e1e6-417d-9929-e0151e3b22d3",
               "name": "metadata.x",
               "value": "={{ $json.metadata.x }}",
               "type": "string"
             },
             {
-              "id": "4cf50ed7-8bd1-4982-b090-c6de65823ae8",
+              "id": "cfef231a-b47c-462b-974a-e8d99b985160",
               "name": "metadata.bluesky",
               "value": "={{ $json.metadata.bluesky }}",
               "type": "string"
             },
             {
-              "id": "55880768-b600-47c2-9bf2-7b7c36228a36",
+              "id": "1f95b004-9b3a-4dec-a0ca-48f4c88a9d1c",
               "name": "metadata.mastodon",
               "value": "={{ $json.metadata.mastodon }}",
               "type": "string"
             },
             {
-              "id": "b56a3481-9921-42c6-812f-36a437a04f43",
+              "id": "b44fd8bf-232b-4123-aeb2-9b0ad1baa1e8",
               "name": "metadata.threads",
               "value": "={{ $json.metadata.threads }}",
               "type": "string"
             },
             {
-              "id": "7277252e-01ec-45c1-9353-548bddffe73e",
+              "id": "6eb07fcb-8b87-4159-84b0-02a113cd1719",
               "name": "metadata.instagram",
               "value": "={{ $json.metadata.instagram }}",
               "type": "string"
             },
             {
-              "id": "c9ef3029-c1e4-4193-ae20-4e5a4f31f5f8",
+              "id": "7e1b235e-d678-4002-9e6b-90e1207191cd",
               "name": "metadata.facebook",
               "value": "={{ $json.metadata.facebook }}",
+              "type": "string"
+            },
+            {
+              "id": "f4ae50fe-9885-4058-bebc-9b1f9d368bfb",
+              "name": "metadata.status",
+              "value": "={{ $json.metadata.status }}",
+              "type": "string"
+            },
+            {
+              "id": "e92631cd-546c-4bbb-9cc9-9fbbeb619178",
+              "name": "metadata.posted_date",
+              "value": "={{ $json.metadata.posted_date }}",
               "type": "string"
             }
           ]
@@ -161,10 +149,10 @@
         "filter": {
           "folderId": {
             "__rl": true,
-            "value": "YOUR_FOLDER_ID_06_SOCIAL_MEDIA_POSTS",
+            "value": "YOUR_GOOGLE_DRIVE_FOLDER_ID",
             "mode": "list",
-            "cachedResultName": "06-Social_Media_Posts",
-            "cachedResultUrl": "https://drive.google.com/drive/folders/YOUR_FOLDER_ID_06_SOCIAL_MEDIA_POSTS"
+            "cachedResultName": "YOUR_FOLDER_NAME",
+            "cachedResultUrl": "https://drive.google.com/drive/folders/YOUR_GOOGLE_DRIVE_FOLDER_ID"
           }
         },
         "options": {}
@@ -181,7 +169,7 @@
       "alwaysOutputData": false,
       "credentials": {
         "googleDriveOAuth2Api": {
-          "id": "YOUR_CREDENTIAL_ID",
+          "id": "YOUR_GOOGLEDRIVEOAUTH2API_CREDENTIAL_ID",
           "name": "Google Drive account"
         }
       }
@@ -193,10 +181,10 @@
         "filter": {
           "folderId": {
             "__rl": true,
-            "value": "YOUR_FOLDER_ID_08_ATTACHMENTS",
+            "value": "YOUR_ATTACHMENTS_FOLDER_ID",
             "mode": "list",
-            "cachedResultName": "08-attachments",
-            "cachedResultUrl": "https://drive.google.com/drive/folders/YOUR_FOLDER_ID_08_ATTACHMENTS"
+            "cachedResultName": "YOUR_ATTACHMENTS_FOLDER_NAME",
+            "cachedResultUrl": "https://drive.google.com/drive/folders/YOUR_ATTACHMENTS_FOLDER_ID"
           },
           "whatToSearch": "files"
         },
@@ -212,7 +200,7 @@
       "name": "Search files and folders1",
       "credentials": {
         "googleDriveOAuth2Api": {
-          "id": "YOUR_CREDENTIAL_ID",
+          "id": "YOUR_GOOGLEDRIVEOAUTH2API_CREDENTIAL_ID",
           "name": "Google Drive account"
         }
       }
@@ -222,8 +210,8 @@
         "operation": "download",
         "fileId": {
           "__rl": true,
-          "value": "={{ $json.id }}",
-          "mode": "id"
+          "mode": "id",
+          "value": "={{ $json.id }}"
         },
         "options": {}
       },
@@ -237,7 +225,7 @@
       "name": "Download file1",
       "credentials": {
         "googleDriveOAuth2Api": {
-          "id": "YOUR_CREDENTIAL_ID",
+          "id": "YOUR_GOOGLEDRIVEOAUTH2API_CREDENTIAL_ID",
           "name": "Google Drive account"
         }
       }
@@ -291,4 +279,3485 @@
         "assignments": {
           "assignments": [
             {
-              "id": "d19ec83b-429e-4764
+              "id": "d19ec83b-429e-4764-af9e-eb41c2f097c0",
+              "name": "data",
+              "value": "={{ $('Extract from File').item.json.data\n    .replace('X: false', 'X: true')\n    .replace('Mastodon: false', 'Mastodon: true')\n    .replace('Bluesky: false', 'Bluesky: true')\n    .replace('Threads: false', 'Threads: true')\n}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1920,
+        1248
+      ],
+      "id": "da8c511e-1fbc-4e0d-9bc4-168358dc2cf6",
+      "name": "Edit Fields1"
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "data",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        2096,
+        1248
+      ],
+      "id": "b608f8e2-953b-4221-9b6b-c9b8e9adf3f1",
+      "name": "Convert to File"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $('Search files and folders').item.json.id }}",
+          "mode": "id"
+        },
+        "changeFileContent": true,
+        "newUpdatedFileName": "={{ $('Download file').item.json.name }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        2864,
+        944
+      ],
+      "id": "b8dfda8a-06ee-4dda-9d4b-b998b7424512",
+      "name": "Update file",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "YOUR_GOOGLEDRIVEOAUTH2API_CREDENTIAL_ID",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.dateTime",
+      "typeVersion": 2,
+      "position": [
+        -2464,
+        -192
+      ],
+      "id": "1cbcf2bc-13e3-4e4f-b5f1-7165b511b8d7",
+      "name": "Date & Time"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.metadata.scheduled_date }}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "string",
+                      "operation": "notEmpty",
+                      "singleValue": true
+                    },
+                    "id": "dc2e5028-61fb-402e-9270-2a72227dd5a7"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Schedule"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "d2893fc0-aa4d-4cfb-8ed6-fe1c2a5ef0be",
+                    "leftValue": "={{ $json.metadata.scheduled_date }}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "string",
+                      "operation": "empty",
+                      "singleValue": true
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "No Schedule"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.3,
+      "position": [
+        -896,
+        -192
+      ],
+      "id": "cf57147f-0e1e-4d1d-93b4-cfa8a807b26c",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.metadata.image }}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "string",
+                      "operation": "notEmpty",
+                      "singleValue": true
+                    },
+                    "id": "8a032a7c-ca08-4ee6-a0e0-a9b0ecdd076a"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Has Image"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "a45eb2e6-6b7b-48c3-aa4b-ac4dd6896175",
+                    "leftValue": "={{ $json.metadata.image }}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "string",
+                      "operation": "empty",
+                      "singleValue": true
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "No image"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.3,
+      "position": [
+        -448,
+        -720
+      ],
+      "id": "c49dcd76-584f-4666-b3e9-38a785486702",
+      "name": "Switch1"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.metadata.image }}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "string",
+                      "operation": "notEmpty",
+                      "singleValue": true
+                    },
+                    "id": "8a032a7c-ca08-4ee6-a0e0-a9b0ecdd076a"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Has Image"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "a45eb2e6-6b7b-48c3-aa4b-ac4dd6896175",
+                    "leftValue": "={{ $json.metadata.image }}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "string",
+                      "operation": "empty",
+                      "singleValue": true
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "No image"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.3,
+      "position": [
+        -448,
+        240
+      ],
+      "id": "8e20bdfb-d983-4aa5-810b-293d9b8ca797",
+      "name": "Switch2"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "152e0414-d606-4908-bbcc-a6a6c9a64b98",
+              "leftValue": "={{ $json.metadata.scheduled_date }}",
+              "rightValue": "={{ $('Date & Time').item.json.currentDate }}",
+              "operator": {
+                "type": "dateTime",
+                "operation": "beforeOrEquals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -672,
+        -720
+      ],
+      "id": "694bf246-afdd-4abc-b3ae-3b0205bdb44b",
+      "name": "If1"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.metadata.platform }}",
+                    "rightValue": "X",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    },
+                    "id": "253cabec-572a-4362-bccc-04ea87237e75"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Twitter"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "dcdbb979-ec48-447d-883d-5b1ff5ddbfdf",
+                    "leftValue": "={{ $json.metadata.platform }}",
+                    "rightValue": "Mastodon",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Mastodon"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "838f1675-c5fb-448d-98ee-04a68e656362",
+                    "leftValue": "={{ $json.metadata.platform }}",
+                    "rightValue": "Bluesky",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Bluesky"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "67c893e4-d0aa-4b24-b5d8-ddda3c5cefb5",
+                    "leftValue": "={{ $json.metadata.platform }}",
+                    "rightValue": "Threads",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Threads"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "78af743a-68e0-42b5-8864-27e71b604ede",
+                    "leftValue": "={{ $json.metadata.platform }}",
+                    "rightValue": "Facebook",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Facebook"
+            }
+          ]
+        },
+        "options": {
+          "allMatchingOutputs": true
+        }
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.3,
+      "position": [
+        -64,
+        848
+      ],
+      "id": "c477cb04-12d2-4166-a4b8-81ed43e452ad",
+      "name": "Platform Switch3"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://bsky.social/xrpc/com.atproto.server.createSession",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "identifier",
+              "value": "YOUR_BLUESKY_USERNAME"
+            },
+            {
+              "name": "password",
+              "value": "YOUR_BLUESKY_APP_PASSWORD"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1504,
+        1040
+      ],
+      "id": "f55e6045-8cc8-413f-a3b7-1c33a870c0d6",
+      "name": "BlueSky - Create Session3"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.twitter.com/2/tweets",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "oAuth1Api",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "text",
+              "value": "={{ $json.metadata['final post'] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1728,
+        656
+      ],
+      "id": "17575569-7b5d-4646-92bc-5b317809d113",
+      "name": "Tweet Without Image1",
+      "credentials": {
+        "twitterOAuth1Api": {
+          "id": "YOUR_TWITTEROAUTH1API_CREDENTIAL_ID",
+          "name": "X OAuth account"
+        },
+        "oAuth1Api": {
+          "id": "YOUR_OAUTH1API_CREDENTIAL_ID",
+          "name": "Twitter OAuth1"
+        },
+        "httpBearerAuth": {
+          "id": "YOUR_HTTPBEARERAUTH_CREDENTIAL_ID",
+          "name": "Bearer Auth account"
+        },
+        "httpHeaderAuth": {
+          "id": "YOUR_HTTPHEADERAUTH_CREDENTIAL_ID",
+          "name": "Header Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://streamers.social/api/v1/statuses",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "status",
+              "value": "={{ $json.metadata['final post'] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1728,
+        848
+      ],
+      "id": "5f24d205-c469-400a-825e-04eaebf0f607",
+      "name": "Mastodon Post Without Image1",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "YOUR_HTTPHEADERAUTH_CREDENTIAL_ID",
+          "name": "Header Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://bsky.social/xrpc/com.atproto.repo.createRecord",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $json.accessJwt }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{\n  {\n    \"repo\": $json.did,\n    \"collection\": \"app.bsky.feed.post\",\n    \"record\": {\n      \"$type\": \"app.bsky.feed.post\",\n      \"text\": $('Platform Switch3').item.json.metadata['final post'] ,\n      \"createdAt\": $now.toISO()\n    }\n  }\n}}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1728,
+        1040
+      ],
+      "id": "dc411e15-ffaf-41d3-8d7b-426e97340307",
+      "name": "BlueSky - Without Image1"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Get the first item coming into this node\nconst item = $input.first();\n\n// Get the post text using the exact path you found\nconst postText = item.json.property_final_post;\n\n// --- This is the most important part ---\n// We must check if the text actually exists before we try to process it.\n// This prevents errors if the input data is ever empty.\nif (typeof postText === 'string') {\n\n  // JSON.stringify() is the Code node equivalent of the .json() method.\n  // It wraps the string in quotes and escapes any internal quotes.\n  // Example: \"Hello\" becomes \"\\\"Hello\\\"\"\n  let escapedText = JSON.stringify(postText);\n\n  // For a social media post, we don't want the outer quotes.\n  // This line removes the first character (\") and the last character (\").\n  item.json.safe_text = escapedText.slice(1, -1);\n\n} else {\n  // If postText was not found, create the safe_text field as an empty string\n  // to prevent errors in the next node.\n  item.json.safe_text = \"\";\n}\n\n// Return the entire item with the new 'safe_text' field added.\nreturn item;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -224,
+        192
+      ],
+      "id": "ef4e74fa-3595-451e-9343-be72fef2a559",
+      "name": "Code in JavaScript10"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://streamers.social/api/v2/media",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "contentType": "multipart-form-data",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "parameterType": "formBinaryData",
+              "name": "file",
+              "inputDataFieldName": "data"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1568,
+        -864
+      ],
+      "id": "cb998554-fc32-4701-b4db-d1e9d84a1df0",
+      "name": "Upload image to Mastodon",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "YOUR_HTTPHEADERAUTH_CREDENTIAL_ID",
+          "name": "Header Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://streamers.social/api/v1/statuses",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ \n  {\n    \"status\": $('Code in JavaScript4').item.json.metadata['final post'],\n    \"media_ids\": [\n      $json.id\n    ]\n  } \n}}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1792,
+        -864
+      ],
+      "id": "b0bbc77e-e287-42f0-b528-80c5429ec574",
+      "name": "Create Mastodon Post",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "YOUR_HTTPHEADERAUTH_CREDENTIAL_ID",
+          "name": "Header Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://upload.twitter.com/1.1/media/upload.json",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "oAuth1Api",
+        "sendBody": true,
+        "contentType": "multipart-form-data",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "parameterType": "formBinaryData",
+              "name": "media",
+              "inputDataFieldName": "data"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1568,
+        -1056
+      ],
+      "id": "7e4b422b-4a2f-4761-93ee-d4a6a4a9de79",
+      "name": "Upload Image to Twitter",
+      "credentials": {
+        "twitterOAuth1Api": {
+          "id": "YOUR_TWITTEROAUTH1API_CREDENTIAL_ID",
+          "name": "X OAuth account"
+        },
+        "oAuth1Api": {
+          "id": "YOUR_OAUTH1API_CREDENTIAL_ID",
+          "name": "Twitter OAuth1"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.twitter.com/2/tweets",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "oAuth1Api",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ \n  {\n    \"text\": $('Code in JavaScript4').item.json.metadata['final post'],\n    \"media\": {\n      \"media_ids\": [\n        $('Upload Image to Twitter').item.json.media_id_string\n      ]\n    }\n  } \n}}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1792,
+        -1056
+      ],
+      "id": "f18e4883-6a43-49a2-ab9e-d1485301854e",
+      "name": "Create Tweet with Media ID",
+      "credentials": {
+        "twitterOAuth1Api": {
+          "id": "YOUR_TWITTEROAUTH1API_CREDENTIAL_ID",
+          "name": "X OAuth account"
+        },
+        "oAuth1Api": {
+          "id": "YOUR_OAUTH1API_CREDENTIAL_ID",
+          "name": "Twitter OAuth1"
+        },
+        "httpBearerAuth": {
+          "id": "YOUR_HTTPBEARERAUTH_CREDENTIAL_ID",
+          "name": "Bearer Auth account"
+        },
+        "httpHeaderAuth": {
+          "id": "YOUR_HTTPHEADERAUTH_CREDENTIAL_ID",
+          "name": "Header Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://bsky.social/xrpc/com.atproto.server.createSession",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "identifier",
+              "value": "YOUR_BLUESKY_USERNAME"
+            },
+            {
+              "name": "password",
+              "value": "YOUR_BLUESKY_APP_PASSWORD"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1120,
+        -672
+      ],
+      "id": "e6778ff4-05e4-4964-92b9-7acf07e99493",
+      "name": "BlueSky - Create Session",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://bsky.social/xrpc/com.atproto.repo.uploadBlob",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $json.accessJwt }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "binaryData",
+        "inputDataFieldName": "=data",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1568,
+        -672
+      ],
+      "id": "e9f31294-1143-4590-89ee-c212e71884db",
+      "name": "BlueSky - Upload Blob"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://bsky.social/xrpc/com.atproto.repo.createRecord",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $('BlueSky - Create Session').item.json.accessJwt }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ \n  {\n    \"repo\": $('BlueSky - Create Session').item.json.did,\n    \"collection\": \"app.bsky.feed.post\",\n    \"record\": {\n      \"$type\": \"app.bsky.feed.post\",\n      \"text\": $('Code in JavaScript4').item.json.metadata['final post'],\n      \"createdAt\": new Date().toISOString(),\n      \"embed\": {\n        \"$type\": \"app.bsky.embed.images\",\n        \"images\": [\n          {\n            \"alt\": \"\",\n            \"image\": {\n              \"$type\": \"blob\",\n              \"ref\": {\n                \"$link\": $('BlueSky - Upload Blob').item.json.blob.ref.$link\n              },\n              \"mimeType\": $('BlueSky - Upload Blob').item.json.blob.mimeType,\n              \"size\": $('BlueSky - Upload Blob').item.json.blob.size\n            }\n          }\n        ]\n      }\n    }\n  } \n}}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1792,
+        -672
+      ],
+      "id": "746b51bd-ef4a-493a-82f7-5f3a63ca0220",
+      "name": "BlueSky - Create Post with Image"
+    },
+    {
+      "parameters": {
+        "amount": 30
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1600,
+        -288
+      ],
+      "id": "0b6d38e4-a6fa-4d64-a668-8ebf93bb6fa0",
+      "name": "Wait4",
+      "webhookId": "YOUR_WEBHOOK_ID"
+    },
+    {
+      "parameters": {
+        "httpRequestMethod": "POST",
+        "graphApiVersion": "=v25.0",
+        "node": "YOUR_INSTAGRAM_ACCOUNT_ID",
+        "edge": "media",
+        "options": {
+          "queryParameters": {
+            "parameter": [
+              {
+                "name": "media_type",
+                "value": "IMAGE"
+              },
+              {
+                "name": "caption",
+                "value": "={{ $('Code in JavaScript4').item.json.metadata['final post'] }}"
+              },
+              {
+                "name": "image_url",
+                "value": "=https://storage.googleapis.com/YOUR_GCS_BUCKET_NAME/{{ $json.name }}"
+              }
+            ]
+          }
+        }
+      },
+      "type": "n8n-nodes-base.facebookGraphApi",
+      "typeVersion": 1,
+      "position": [
+        1392,
+        -288
+      ],
+      "id": "11fd199e-6c0e-4367-9e2f-b564aac07883",
+      "name": "Get Instagram ID",
+      "credentials": {
+        "facebookGraphApi": {
+          "id": "YOUR_FACEBOOKGRAPHAPI_CREDENTIAL_ID",
+          "name": "Facebook API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "httpRequestMethod": "POST",
+        "graphApiVersion": "=v24.0",
+        "node": "YOUR_INSTAGRAM_ACCOUNT_ID",
+        "edge": "media_publish",
+        "options": {
+          "queryParameters": {
+            "parameter": [
+              {
+                "name": "creation_id",
+                "value": "={{ $json.id }}"
+              }
+            ]
+          }
+        }
+      },
+      "type": "n8n-nodes-base.facebookGraphApi",
+      "typeVersion": 1,
+      "position": [
+        1824,
+        -288
+      ],
+      "id": "9f7d4dc5-3cc0-4a05-b3e3-c458e7b747dd",
+      "name": "Post on Instagram",
+      "credentials": {
+        "facebookGraphApi": {
+          "id": "YOUR_FACEBOOKGRAPHAPI_CREDENTIAL_ID",
+          "name": "Facebook API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Get the first item coming into this node\nconst item = $input.first();\n\n// Get the post text using the exact path you found\nconst postText = item.json.property_final_post;\n\n// --- This is the most important part ---\n// We must check if the text actually exists before we try to process it.\n// This prevents errors if the input data is ever empty.\nif (typeof postText === 'string') {\n\n  // JSON.stringify() is the Code node equivalent of the .json() method.\n  // It wraps the string in quotes and escapes any internal quotes.\n  // Example: \"Hello\" becomes \"\\\"Hello\\\"\"\n  let escapedText = JSON.stringify(postText);\n\n  // For a social media post, we don't want the outer quotes.\n  // This line removes the first character (\") and the last character (\").\n  item.json.safe_text = escapedText.slice(1, -1);\n\n} else {\n  // If postText was not found, create the safe_text field as an empty string\n  // to prevent errors in the next node.\n  item.json.safe_text = \"\";\n}\n\n// Return the entire item with the new 'safe_text' field added.\nreturn item;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -224,
+        -672
+      ],
+      "id": "f787a180-90c5-4e2b-a3f9-c06f1c49b9a7",
+      "name": "Code in JavaScript4"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $('Code in JavaScript4').item.json.metadata.platform }}",
+                    "rightValue": "Twitter",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    },
+                    "id": "253cabec-572a-4362-bccc-04ea87237e75"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Twitter"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "dcdbb979-ec48-447d-883d-5b1ff5ddbfdf",
+                    "leftValue": "={{ $('Code in JavaScript4').item.json.metadata.platform }}",
+                    "rightValue": "Mastodon",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Mastodon"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "838f1675-c5fb-448d-98ee-04a68e656362",
+                    "leftValue": "={{ $('Code in JavaScript4').item.json.metadata.platform }}",
+                    "rightValue": "Bluesky",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Bluesky"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "67c893e4-d0aa-4b24-b5d8-ddda3c5cefb5",
+                    "leftValue": "={{ $('Code in JavaScript4').item.json.metadata.platform }}",
+                    "rightValue": "Threads",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Threads"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "78af743a-68e0-42b5-8864-27e71b604ede",
+                    "leftValue": "={{ $('Code in JavaScript4').item.json.metadata.platform }}",
+                    "rightValue": "Facebook",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "=Facebook"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "08c9eb59-4d11-467c-9334-c11f1f6cf3d6",
+                    "leftValue": "={{ $('Code in JavaScript4').item.json.metadata.platform }}",
+                    "rightValue": "Instagram",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Instagram"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "a66a3bed-e99b-4789-9d10-5d26418cf261",
+                    "leftValue": "={{ $('Code in JavaScript4').item.json.metadata.platform }}",
+                    "rightValue": "Pixelfed",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Pixelfed"
+            }
+          ]
+        },
+        "options": {
+          "allMatchingOutputs": true
+        }
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.3,
+      "position": [
+        608,
+        -704
+      ],
+      "id": "24803487-12b6-480a-8efb-3a2dd5115828",
+      "name": "Platform Switch",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "jsCode": "// 1. Reach back to the 'Download file1' node and grab the image\nconst imageFile = $('Download file1').first().binary.data;\n\n// 2. Return the current JSON (the login token) \n// AND re-attach the binary image so the next node can see it.\nreturn {\n  json: $json,\n  binary: {\n    data: imageFile\n  }\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1344,
+        -672
+      ],
+      "id": "3cd17e8a-545f-44a2-b597-ef03acf561ad",
+      "name": "Code in JavaScript1"
+    },
+    {
+      "parameters": {
+        "jsCode": "// 1. Reach back to the 'Download file1' node and grab the image\nconst imageFile = $('Download file1').first().binary.data;\n\n// 2. Return the current JSON (the login token) \n// AND re-attach the binary image so the next node can see it.\nreturn {\n  json: $json,\n  binary: {\n    data: imageFile\n  }\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1344,
+        -864
+      ],
+      "id": "254e9d55-587f-407e-90c6-3722fa0bdb51",
+      "name": "Code in JavaScript2"
+    },
+    {
+      "parameters": {
+        "jsCode": "// 1. Reach back to the 'Download file1' node and grab the image\nconst imageFile = $('Download file1').first().binary.data;\n\n// 2. Return the current JSON (the login token) \n// AND re-attach the binary image so the next node can see it.\nreturn {\n  json: $json,\n  binary: {\n    data: imageFile\n  }\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1344,
+        -1056
+      ],
+      "id": "483c5caa-ce55-400f-87d5-fb9203fc967a",
+      "name": "Code in JavaScript3"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "d19ec83b-429e-4764-af9e-eb41c2f097c0",
+              "name": "data",
+              "value": "={{ $('Extract from File').item.json.data\n    .replace('X: false', 'X: true')\n    .replace('Mastodon: false', 'Mastodon: true')\n    .replace('Bluesky: false', 'Bluesky: true')\n    .replace('Threads: false', 'Threads: true')\n}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        2016,
+        -480
+      ],
+      "id": "30f0ee7c-eee2-4481-b32a-7f6e78918f64",
+      "name": "Edit Fields2"
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "data",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        2240,
+        -480
+      ],
+      "id": "af72879e-2f3f-42cd-80d8-6b61c84a4178",
+      "name": "Convert to File1"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $('Search files and folders').item.json.id }}",
+          "mode": "id"
+        },
+        "changeFileContent": true,
+        "newUpdatedFileName": "={{ $('Download file').item.json.name }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        3360,
+        -640
+      ],
+      "id": "d797ec9b-e4a7-4dad-be7b-5256bbed0e81",
+      "name": "Update file1",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "YOUR_GOOGLEDRIVEOAUTH2API_CREDENTIAL_ID",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "*/20 5-20 * * *"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -2688,
+        -192
+      ],
+      "id": "6f59bd65-d071-4265-95bc-90dd27f7297d",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "9044438c-0060-4f76-9865-746be479dfd2",
+              "leftValue": "={{ $json.metadata.x }}",
+              "rightValue": "false",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1504,
+        656
+      ],
+      "id": "0bfea0bc-9a89-424f-b7bf-18db5dee5353",
+      "name": "If2"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "9044438c-0060-4f76-9865-746be479dfd2",
+              "leftValue": "={{ $json.metadata.mastodon }}",
+              "rightValue": "false",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1504,
+        848
+      ],
+      "id": "f9f91f5f-e947-4fbe-802e-ad56bf2331bc",
+      "name": "If3"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "9044438c-0060-4f76-9865-746be479dfd2",
+              "leftValue": "={{ $json.metadata.bluesky }}",
+              "rightValue": "false",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1120,
+        1040
+      ],
+      "id": "3257c4e0-3a44-4700-bb82-4c45e8d2e335",
+      "name": "If4"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "9044438c-0060-4f76-9865-746be479dfd2",
+              "leftValue": "={{ $json.metadata.threads }}",
+              "rightValue": "false",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1040,
+        1248
+      ],
+      "id": "dd62164f-fe8e-4002-9943-22b66ffbbd6d",
+      "name": "If5"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "9044438c-0060-4f76-9865-746be479dfd2",
+              "leftValue": "={{ $('Code in JavaScript4').item.json.metadata.x }}",
+              "rightValue": "false",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1120,
+        -1056
+      ],
+      "id": "83fadda9-d127-42d1-99b0-cb1e4fd3c8c6",
+      "name": "If6"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "9044438c-0060-4f76-9865-746be479dfd2",
+              "leftValue": "={{ $('Code in JavaScript4').item.json.metadata.mastodon }}",
+              "rightValue": "false",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1120,
+        -864
+      ],
+      "id": "3f8def47-9da9-4761-b810-b2cbec7e6281",
+      "name": "If7"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "9044438c-0060-4f76-9865-746be479dfd2",
+              "leftValue": "={{ $('Code in JavaScript4').item.json.metadata.bluesky }}",
+              "rightValue": "false",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        944,
+        -688
+      ],
+      "id": "de5f2b35-9760-4296-a95d-2fbbf2386190",
+      "name": "If8"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "9044438c-0060-4f76-9865-746be479dfd2",
+              "leftValue": "={{ $('Code in JavaScript4').item.json.metadata.threads }}",
+              "rightValue": "false",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1120,
+        -480
+      ],
+      "id": "6bb37bd6-b724-4671-9c64-6717fa91d382",
+      "name": "If9"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "9044438c-0060-4f76-9865-746be479dfd2",
+              "leftValue": "={{ $('Code in JavaScript4').item.json.metadata.instagram }}",
+              "rightValue": "false",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1120,
+        -288
+      ],
+      "id": "b86e6f55-1995-42e0-b765-52c6a030b226",
+      "name": "If10"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "d19ec83b-429e-4764-af9e-eb41c2f097c0",
+              "name": "data",
+              "value": "={{ $('Extract from File').item.json.data\n    .replace('X: false', 'X: true')\n    .replace('Mastodon: false', 'Mastodon: true')\n}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1952,
+        848
+      ],
+      "id": "8ca25c98-74ac-4532-ac65-6c37891c4db7",
+      "name": "Edit Fields7"
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "data",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        2176,
+        848
+      ],
+      "id": "8e821035-1c40-4bf2-ae30-4f959d612d59",
+      "name": "Convert to File6"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "d19ec83b-429e-4764-af9e-eb41c2f097c0",
+              "name": "data",
+              "value": "={{ $('Extract from File').item.json.data\n    .replace('X: false', 'X: true')\n}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1952,
+        656
+      ],
+      "id": "635f49ed-119c-4dc3-aaf3-aa8b32f013e0",
+      "name": "Edit Fields8"
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "data",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        2176,
+        656
+      ],
+      "id": "ad4c619f-eb9e-457d-99ef-26f75fc4963e",
+      "name": "Convert to File7"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "d19ec83b-429e-4764-af9e-eb41c2f097c0",
+              "name": "data",
+              "value": "={{ $('Extract from File').item.json.data\n    .replace('X: false', 'X: true')\n    .replace('Mastodon: false', 'Mastodon: true')\n    .replace('Bluesky: false', 'Bluesky: true')\n}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1952,
+        1040
+      ],
+      "id": "ec10926a-c2a5-4f6d-9279-ba0716bae9d7",
+      "name": "Edit Fields9"
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "data",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        2176,
+        1040
+      ],
+      "id": "dd17dac3-25ea-41ed-87b0-3484dd8fb8ea",
+      "name": "Convert to File8"
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "data",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        2240,
+        -288
+      ],
+      "id": "9cca1be9-2db5-4492-96ff-52230b370a48",
+      "name": "Convert to File2"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "d19ec83b-429e-4764-af9e-eb41c2f097c0",
+              "name": "data",
+              "value": "={{ $('Extract from File').item.json.data\n    .replace('X: false', 'X: true')\n    .replace('Mastodon: false', 'Mastodon: true')\n}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        2016,
+        -864
+      ],
+      "id": "89e15906-1a11-4ddb-be79-4570d76e5dd2",
+      "name": "Edit Fields10"
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "data",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        2240,
+        -864
+      ],
+      "id": "cfe4f967-79b2-49b3-b94d-7655f58d56c0",
+      "name": "Convert to File9"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "d19ec83b-429e-4764-af9e-eb41c2f097c0",
+              "name": "data",
+              "value": "={{ $('Extract from File').item.json.data\n    .replace('X: false', 'X: true')\n}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        2016,
+        -1056
+      ],
+      "id": "5eabe661-8150-4ba1-bd3a-42ae87317c97",
+      "name": "Edit Fields11"
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "data",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        2240,
+        -1056
+      ],
+      "id": "66ee7548-39e0-4837-b8f9-4e7ac901a15e",
+      "name": "Convert to File10"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "d19ec83b-429e-4764-af9e-eb41c2f097c0",
+              "name": "data",
+              "value": "={{ $('Extract from File').item.json.data\n    .replace('X: false', 'X: true')\n    .replace('Mastodon: false', 'Mastodon: true')\n    .replace('Bluesky: false', 'Bluesky: true')\n}}",
+              "type": "string"
+            },
+            {
+              "id": "c4d7492c-01de-451b-813f-984aa6b1da54",
+              "name": "",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        2016,
+        -672
+      ],
+      "id": "81745d1d-44b4-4e22-8315-2a9e998bd115",
+      "name": "Edit Fields12"
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "data",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        2240,
+        -672
+      ],
+      "id": "50790b57-cc32-44d9-ad37-afa0b1680a66",
+      "name": "Convert to File11"
+    },
+    {
+      "parameters": {
+        "resource": "object",
+        "operation": "create",
+        "bucketName": "YOUR_GCS_BUCKET_NAME",
+        "objectName": "=image_{{ $json.id }}.png",
+        "createData": {},
+        "createQuery": {},
+        "encryptionHeaders": {},
+        "requestOptions": {}
+      },
+      "type": "n8n-nodes-base.googleCloudStorage",
+      "typeVersion": 1,
+      "position": [
+        448,
+        -672
+      ],
+      "id": "6eb92e0e-3531-4b46-9dae-b602c7fd18ea",
+      "name": "Create an object",
+      "retryOnFail": true,
+      "credentials": {
+        "googleCloudStorageOAuth2Api": {
+          "id": "YOUR_GOOGLECLOUDSTORAGEOAUTH2API_CREDENTIAL_ID",
+          "name": "Google Cloud Storage account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://graph.threads.net/v1.0/YOUR_THREADS_ACCOUNT_ID/threads_publish",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "creation_id",
+              "value": "={{ $json.id }}"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $('GET THREADS TOKEN').item.json.Token }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        1824,
+        -496
+      ],
+      "id": "30b56e5f-20d8-43ea-84ad-51d63fb10656",
+      "name": "POST-ON-THREADS"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://graph.threads.net/v1.0/YOUR_THREADS_ACCOUNT_ID/threads",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "media_type",
+              "value": "IMAGE"
+            },
+            {
+              "name": "text",
+              "value": "={{ $('Code in JavaScript4').item.json.metadata['final post'] }}"
+            },
+            {
+              "name": "image_url",
+              "value": "=https://storage.googleapis.com/YOUR_GCS_BUCKET_NAME/{{ $('If9').item.json.name }}"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $json.Token }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        1536,
+        -496
+      ],
+      "id": "59edfba5-22d8-41ba-ad0e-d5a80b5fd191",
+      "name": "GET-THREADS-ID"
+    },
+    {
+      "parameters": {
+        "amount": 30
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1680,
+        -496
+      ],
+      "id": "f188e8ea-8109-4377-855e-3a2347db9367",
+      "name": "Wait1",
+      "webhookId": "5c7bd175-7037-4fce-91a5-ef9b86b10542"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "YOUR_GOOGLE_SHEETS_FILE_ID",
+          "mode": "list",
+          "cachedResultName": "YOUR_SHEETS_FILE_NAME",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEETS_FILE_ID/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "YOUR_SHEET_GID",
+          "mode": "list",
+          "cachedResultName": "YOUR_SHEET_NAME",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEETS_FILE_ID/edit#gid=876762686"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "Platform",
+              "lookupValue": "Threads"
+            }
+          ]
+        },
+        "combineFilters": "OR",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1392,
+        -496
+      ],
+      "id": "48b2eaa6-f193-4b71-8c12-ba26be3bd763",
+      "name": "GET THREADS TOKEN",
+      "alwaysOutputData": true,
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "YOUR_GOOGLESHEETSOAUTH2API_CREDENTIAL_ID",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://graph.threads.net/v1.0/YOUR_THREADS_ACCOUNT_ID/threads_publish",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "creation_id",
+              "value": "={{ $json.id }}"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $('GET THREADS TOKEN1').item.json.Token }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        1744,
+        1248
+      ],
+      "id": "baea0dc4-b2b6-4359-896b-0c13868b0944",
+      "name": "POST-ON-THREADS1"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://graph.threads.net/v1.0/YOUR_THREADS_ACCOUNT_ID/threads",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "media_type",
+              "value": "TEXT"
+            },
+            {
+              "name": "text",
+              "value": "={{ $('Code in JavaScript10').item.json.metadata['final post'] }}"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $json.Token }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        1456,
+        1248
+      ],
+      "id": "3d94a0d5-0852-4de9-b52e-4adc95155735",
+      "name": "GET-THREADS-ID1"
+    },
+    {
+      "parameters": {
+        "amount": 30
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1600,
+        1248
+      ],
+      "id": "001b4c2a-6986-4191-90e0-cd05b2141103",
+      "name": "Wait3",
+      "webhookId": "5c7bd175-7037-4fce-91a5-ef9b86b10542"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "YOUR_GOOGLE_SHEETS_FILE_ID",
+          "mode": "list",
+          "cachedResultName": "YOUR_SHEETS_FILE_NAME",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEETS_FILE_ID/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "YOUR_SHEET_GID",
+          "mode": "list",
+          "cachedResultName": "YOUR_SHEET_NAME",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEETS_FILE_ID/edit#gid=876762686"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "Platform",
+              "lookupValue": "Threads"
+            }
+          ]
+        },
+        "combineFilters": "OR",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1312,
+        1248
+      ],
+      "id": "f903c67a-9719-45a6-98fc-a4bf5c2c2b9b",
+      "name": "GET THREADS TOKEN1",
+      "alwaysOutputData": true,
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "YOUR_GOOGLESHEETSOAUTH2API_CREDENTIAL_ID",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "amount": 30
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1696,
+        -80
+      ],
+      "id": "ae57adc2-77e4-4b97-9f6e-2d810dbb7c81",
+      "name": "Wait5",
+      "webhookId": "5c7bd175-7037-4fce-91a5-ef9b86b10542"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "9044438c-0060-4f76-9865-746be479dfd2",
+              "leftValue": "={{ $('Code in JavaScript4').item.json.metadata.facebook }}",
+              "rightValue": "false",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1072,
+        -64
+      ],
+      "id": "6c5d85e0-de61-446e-b0bf-d6692cd795d0",
+      "name": "If11"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "d19ec83b-429e-4764-af9e-eb41c2f097c0",
+              "name": "data",
+              "value": "={{ $('Extract from File').item.json.data\n    .replace('posted_date:', 'posted_date: ' + $('Date & Time').item.json.currentDate)\n    .replace('status: ready', 'status: published')\n    .replace('X: false', 'X: true')\n    .replace('Mastodon: false', 'Mastodon: true')\n    .replace('Bluesky: false', 'Bluesky: true')\n    .replace('Threads: false', 'Threads: true')\n    .replace('Instagram: false', 'Instagram: true')\n    .replace('Facebook: false', 'Facebook: true')\n}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        2112,
+        -80
+      ],
+      "id": "7a1f8a76-7d74-4a2c-a89c-e652e65d228e",
+      "name": "Edit Fields4"
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "data",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        2336,
+        -80
+      ],
+      "id": "1beae685-4eac-4321-9d95-fd7b52aa0f8c",
+      "name": "Convert to File3"
+    },
+    {
+      "parameters": {
+        "httpRequestMethod": "POST",
+        "graphApiVersion": "=v25.0",
+        "node": "YOUR_FACEBOOK_PAGE_ID",
+        "edge": "photos",
+        "options": {
+          "queryParameters": {
+            "parameter": [
+              {
+                "name": "url",
+                "value": "=https://storage.googleapis.com/YOUR_GCS_BUCKET_NAME/{{ $json.name }}"
+              },
+              {
+                "name": "message",
+                "value": "={{ $('Code in JavaScript4').item.json.metadata['final post'] }}"
+              }
+            ]
+          }
+        }
+      },
+      "type": "n8n-nodes-base.facebookGraphApi",
+      "typeVersion": 1,
+      "position": [
+        1392,
+        -80
+      ],
+      "id": "14245f8f-6aa0-4d4a-928d-b9e55a4b78c8",
+      "name": "GET FACEBOOK ID",
+      "credentials": {
+        "facebookGraphApi": {
+          "id": "YOUR_FACEBOOKGRAPHAPI_CREDENTIAL_ID",
+          "name": "Facebook API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "httpRequestMethod": "POST",
+        "graphApiVersion": "=v24.0",
+        "node": "YOUR_FACEBOOK_PAGE_ID",
+        "edge": "media_publish",
+        "options": {
+          "queryParameters": {
+            "parameter": [
+              {
+                "name": "creation_id",
+                "value": "={{ $json.id }}"
+              }
+            ]
+          }
+        }
+      },
+      "type": "n8n-nodes-base.facebookGraphApi",
+      "typeVersion": 1,
+      "position": [
+        1920,
+        -80
+      ],
+      "id": "8a1af56a-54af-4248-b7b3-1ccf8f0a74ec",
+      "name": "POST ON FACEBOOK PAGE",
+      "credentials": {
+        "facebookGraphApi": {
+          "id": "YOUR_FACEBOOKGRAPHAPI_CREDENTIAL_ID",
+          "name": "Facebook API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "amount": 30
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1584,
+        1488
+      ],
+      "id": "03cf18e2-84c4-40ed-99b9-398e121a5831",
+      "name": "Wait6",
+      "webhookId": "5c7bd175-7037-4fce-91a5-ef9b86b10542"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "9044438c-0060-4f76-9865-746be479dfd2",
+              "leftValue": "={{ $json.metadata.facebook }}",
+              "rightValue": "false",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        960,
+        1504
+      ],
+      "id": "3c07484c-71c9-4b57-86ff-c7a0f5e40efb",
+      "name": "If12"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "d19ec83b-429e-4764-af9e-eb41c2f097c0",
+              "name": "data",
+              "value": "={{ $('Extract from File').item.json.data\n    .replace('posted_date:', 'posted_date: ' + $('Date & Time').item.json.currentDate)\n    .replace('status: ready', 'status: published')\n    .replace('X: false', 'X: true')\n    .replace('Mastodon: false', 'Mastodon: true')\n    .replace('Bluesky: false', 'Bluesky: true')\n    .replace('Threads: false', 'Threads: true')\n    .replace('Facebook: false', 'Facebook: true')\n}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        2000,
+        1488
+      ],
+      "id": "4324ebea-f406-4919-9954-191d7ad8e20d",
+      "name": "Edit Fields5"
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "data",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        2224,
+        1488
+      ],
+      "id": "8064b5f8-a104-40f6-8581-b5448f2b8c54",
+      "name": "Convert to File4"
+    },
+    {
+      "parameters": {
+        "httpRequestMethod": "POST",
+        "graphApiVersion": "=v25.0",
+        "node": "YOUR_FACEBOOK_PAGE_ID",
+        "edge": "feed",
+        "options": {
+          "queryParameters": {
+            "parameter": [
+              {
+                "name": "message",
+                "value": "={{ $('Code in JavaScript10').item.json.metadata['final post'] }}"
+              }
+            ]
+          }
+        }
+      },
+      "type": "n8n-nodes-base.facebookGraphApi",
+      "typeVersion": 1,
+      "position": [
+        1280,
+        1488
+      ],
+      "id": "3de1ed8c-3b92-44d1-9564-15b0f4da0040",
+      "name": "GET FACEBOOK ID1",
+      "credentials": {
+        "facebookGraphApi": {
+          "id": "YOUR_FACEBOOKGRAPHAPI_CREDENTIAL_ID",
+          "name": "Facebook API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "httpRequestMethod": "POST",
+        "graphApiVersion": "=v24.0",
+        "node": "YOUR_FACEBOOK_PAGE_ID",
+        "edge": "media_publish",
+        "options": {
+          "queryParameters": {
+            "parameter": [
+              {
+                "name": "creation_id",
+                "value": "={{ $json.id }}"
+              }
+            ]
+          }
+        }
+      },
+      "type": "n8n-nodes-base.facebookGraphApi",
+      "typeVersion": 1,
+      "position": [
+        1808,
+        1488
+      ],
+      "id": "c40d4680-f157-4fd7-981c-75e9d02405f8",
+      "name": "POST ON FACEBOOK PAGE1",
+      "credentials": {
+        "facebookGraphApi": {
+          "id": "YOUR_FACEBOOKGRAPHAPI_CREDENTIAL_ID",
+          "name": "Facebook API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $('Search files and folders').item.json.id }}",
+          "mode": "id"
+        },
+        "changeFileContent": true,
+        "newUpdatedFileName": "={{ $('Download file').item.json.name }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        2640,
+        -80
+      ],
+      "id": "b224d099-5323-461f-8e11-bd9ab268ca14",
+      "name": "Update file2",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "YOUR_GOOGLEDRIVEOAUTH2API_CREDENTIAL_ID",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $('Search files and folders').item.json.id }}",
+          "mode": "id"
+        },
+        "changeFileContent": true,
+        "newUpdatedFileName": "={{ $('Download file').item.json.name }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        2608,
+        1488
+      ],
+      "id": "33ad169c-311e-429c-b9bb-9ce8295c168b",
+      "name": "Update file3",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "YOUR_GOOGLEDRIVEOAUTH2API_CREDENTIAL_ID",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "d19ec83b-429e-4764-af9e-eb41c2f097c0",
+              "name": "data",
+              "value": "={{ $('Extract from File').item.json.data\n    .replace('X: false', 'X: true')\n    .replace('Mastodon: false', 'Mastodon: true')\n    .replace('Bluesky: false', 'Bluesky: true')\n    .replace('Threads: false', 'Threads: true')\n    .replace('Instagram: false', 'Instagram: true')\n}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {
+          "ignoreConversionErrors": true
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        2016,
+        -288
+      ],
+      "id": "33e9e63c-2674-4d14-82d2-8a8f5f1f94da",
+      "name": "Edit Fields3"
+    }
+  ],
+  "connections": {
+    "Download file": {
+      "main": [
+        [
+          {
+            "node": "Extract from File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract from File": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search files and folders": {
+      "main": [
+        [
+          {
+            "node": "Download file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search files and folders1": {
+      "main": [
+        [
+          {
+            "node": "Download file1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Download file1": {
+      "main": [
+        [
+          {
+            "node": "Create an object",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields1": {
+      "main": [
+        [
+          {
+            "node": "Convert to File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File": {
+      "main": [
+        [
+          {
+            "node": "Update file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update file": {
+      "main": [
+        []
+      ]
+    },
+    "Date & Time": {
+      "main": [
+        [
+          {
+            "node": "Search files and folders",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "If1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Switch2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch1": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript4",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Code in JavaScript10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch2": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript4",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Code in JavaScript10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If1": {
+      "main": [
+        [
+          {
+            "node": "Switch1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Platform Switch3": {
+      "main": [
+        [
+          {
+            "node": "If2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "If3",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "If4",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "If5",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "If12",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "BlueSky - Create Session3": {
+      "main": [
+        [
+          {
+            "node": "BlueSky - Without Image1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tweet Without Image1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Mastodon Post Without Image1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "BlueSky - Without Image1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields9",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript10": {
+      "main": [
+        [
+          {
+            "node": "Platform Switch3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload image to Mastodon": {
+      "main": [
+        [
+          {
+            "node": "Create Mastodon Post",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Mastodon Post": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload Image to Twitter": {
+      "main": [
+        [
+          {
+            "node": "Create Tweet with Media ID",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Tweet with Media ID": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields11",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "BlueSky - Create Session": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "BlueSky - Upload Blob": {
+      "main": [
+        [
+          {
+            "node": "BlueSky - Create Post with Image",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "BlueSky - Create Post with Image": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields12",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait4": {
+      "main": [
+        [
+          {
+            "node": "Post on Instagram",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Instagram ID": {
+      "main": [
+        [
+          {
+            "node": "Wait4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Post on Instagram": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript4": {
+      "main": [
+        [
+          {
+            "node": "Search files and folders1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Platform Switch": {
+      "main": [
+        [
+          {
+            "node": "If6",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "If7",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "If8",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "If9",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "If11",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "If10",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    },
+    "Code in JavaScript1": {
+      "main": [
+        [
+          {
+            "node": "BlueSky - Upload Blob",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript2": {
+      "main": [
+        [
+          {
+            "node": "Upload image to Mastodon",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript3": {
+      "main": [
+        [
+          {
+            "node": "Upload Image to Twitter",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields2": {
+      "main": [
+        [
+          {
+            "node": "Convert to File1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File1": {
+      "main": [
+        [
+          {
+            "node": "Update file1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update file1": {
+      "main": [
+        []
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Date & Time",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If2": {
+      "main": [
+        [
+          {
+            "node": "Tweet Without Image1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If3": {
+      "main": [
+        [
+          {
+            "node": "Mastodon Post Without Image1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If4": {
+      "main": [
+        [
+          {
+            "node": "BlueSky - Create Session3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If5": {
+      "main": [
+        [
+          {
+            "node": "GET THREADS TOKEN1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If6": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If7": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If8": {
+      "main": [
+        [
+          {
+            "node": "BlueSky - Create Session",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If9": {
+      "main": [
+        [
+          {
+            "node": "GET THREADS TOKEN",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    },
+    "If10": {
+      "main": [
+        [
+          {
+            "node": "Get Instagram ID",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields7": {
+      "main": [
+        [
+          {
+            "node": "Convert to File6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File6": {
+      "main": [
+        [
+          {
+            "node": "Update file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields8": {
+      "main": [
+        [
+          {
+            "node": "Convert to File7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File7": {
+      "main": [
+        [
+          {
+            "node": "Update file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields9": {
+      "main": [
+        [
+          {
+            "node": "Convert to File8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File8": {
+      "main": [
+        [
+          {
+            "node": "Update file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File2": {
+      "main": [
+        [
+          {
+            "node": "Update file1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields10": {
+      "main": [
+        [
+          {
+            "node": "Convert to File9",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File9": {
+      "main": [
+        [
+          {
+            "node": "Update file1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields11": {
+      "main": [
+        [
+          {
+            "node": "Convert to File10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File10": {
+      "main": [
+        [
+          {
+            "node": "Update file1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields12": {
+      "main": [
+        [
+          {
+            "node": "Convert to File11",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File11": {
+      "main": [
+        [
+          {
+            "node": "Update file1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create an object": {
+      "main": [
+        [
+          {
+            "node": "Platform Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "POST-ON-THREADS": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GET-THREADS-ID": {
+      "main": [
+        [
+          {
+            "node": "Wait1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait1": {
+      "main": [
+        [
+          {
+            "node": "POST-ON-THREADS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GET THREADS TOKEN": {
+      "main": [
+        [
+          {
+            "node": "GET-THREADS-ID",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "POST-ON-THREADS1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GET-THREADS-ID1": {
+      "main": [
+        [
+          {
+            "node": "Wait3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait3": {
+      "main": [
+        [
+          {
+            "node": "POST-ON-THREADS1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GET THREADS TOKEN1": {
+      "main": [
+        [
+          {
+            "node": "GET-THREADS-ID1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait5": {
+      "main": [
+        [
+          {
+            "node": "POST ON FACEBOOK PAGE",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If11": {
+      "main": [
+        [
+          {
+            "node": "GET FACEBOOK ID",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields4": {
+      "main": [
+        [
+          {
+            "node": "Convert to File3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File3": {
+      "main": [
+        [
+          {
+            "node": "Update file2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GET FACEBOOK ID": {
+      "main": [
+        [
+          {
+            "node": "Wait5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "POST ON FACEBOOK PAGE": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait6": {
+      "main": [
+        [
+          {
+            "node": "POST ON FACEBOOK PAGE1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If12": {
+      "main": [
+        [
+          {
+            "node": "GET FACEBOOK ID1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields5": {
+      "main": [
+        [
+          {
+            "node": "Convert to File4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File4": {
+      "main": [
+        [
+          {
+            "node": "Update file3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GET FACEBOOK ID1": {
+      "main": [
+        [
+          {
+            "node": "Wait6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "POST ON FACEBOOK PAGE1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields3": {
+      "main": [
+        [
+          {
+            "node": "Convert to File2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "YOUR_INSTANCE_ID"
+  }
+}
